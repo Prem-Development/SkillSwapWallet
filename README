@@ -1,0 +1,408 @@
+# SkillSwap Wallet System 🎓💡
+
+### AI-Driven Skill Exchange & Credit-Based Learning Platform
+
+SkillSwap Wallet System is a **free peer-to-peer skill exchange platform** designed to help students, freelancers, and professionals learn and share skills without using money.
+
+Instead of financial transactions, the platform uses a **Skill Credit economy** where users can teach skills to earn credits and spend those credits to learn other skills.
+
+> **Knowledge is the currency.**
+
+---
+
+## 📌 Project Overview
+
+The SkillSwap Wallet System was developed as a software development project for the **Higher National Diploma in Information Technology (HNDIT)** at the **Advanced Technological Institute, Batticaloa – SLIATE**.
+
+The system aims to overcome common problems in existing online learning platforms by providing:
+
+* Zero-cost skill exchange
+* Skill-based user matching
+* Digital skill wallet
+* Session management
+* Built-in communication
+* Reviews and ratings
+* Gamification
+* Administrative management
+
+New users receive **2 starter Skill Credits** when they register.
+
+---
+
+## 🎯 Main Objective
+
+The main objective of SkillSwap is to create a fair and accessible learning ecosystem where users can:
+
+**Teach → Earn Credits → Learn → Share Knowledge**
+
+The system eliminates the need for direct monetary transactions and encourages users to contribute their knowledge to the community.
+
+---
+
+## ✨ Key Features
+
+### 👤 User Registration & Profile
+
+* Secure user registration
+* User profile management
+* Profile photo
+* Skills offered
+* Skills wanted
+* User bio
+* Skill wallet balance
+* Session history
+
+### 💰 Skill Wallet
+
+* Skill Credit balance
+* Credit transaction history
+* Earn credits by teaching
+* Spend credits by learning
+* Emergency credit borrowing
+* Credit-based transaction tracking
+
+### 🤖 AI-Driven Matchmaking
+
+The matching system suggests suitable users based on:
+
+* Skills offered
+* Skills wanted
+* User ratings
+* Credit balance
+* Availability
+
+The system can identify users whose offered skills match another user's learning requirements.
+
+### 🔄 Skill Swap Requests
+
+Users can:
+
+* Send swap requests
+* Accept requests
+* Reject requests
+* Track swap history
+
+### 🕐 Session Management
+
+The system supports:
+
+* Session creation
+* Session completion
+* Teacher confirmation
+* Learner confirmation
+* Automatic credit transfer after successful confirmation
+
+Credits are transferred only after both participants confirm the completed session.
+
+### 💬 Communication
+
+Built-in communication features include:
+
+* AJAX-based text chat
+* Audio message upload
+* Message history
+* Communication between matched users
+
+### ⭐ Reviews & Ratings
+
+After completing a session, learners can:
+
+* Give a 5-star rating
+* Write a review
+* View teacher ratings
+* Build a trusted reputation
+
+### 🏆 Gamification
+
+The platform encourages participation through:
+
+* XP points
+* Bronze badge
+* Silver badge
+* Gold badge
+* Teaching streaks
+
+### 🛠️ Admin Dashboard
+
+Administrators can manage:
+
+* Users
+* Sessions
+* Reports
+* Suspended accounts
+* Platform analytics
+* Data exports
+
+---
+
+## 💳 Skill Credit Economy
+
+The platform uses a simple credit-based model:
+
+| Activity              |             Credit |
+| --------------------- | -----------------: |
+| 1 hour teaching       |    +1 Skill Credit |
+| 1 hour learning       |    -1 Skill Credit |
+| New user registration | +2 Starter Credits |
+
+This creates a fair exchange system where users contribute knowledge before consuming other learning services.
+
+---
+
+## 🏗️ System Architecture
+
+The system follows a modular web application architecture.
+
+```text
+                    ┌─────────────────────┐
+                    │      Users          │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Web Application   │
+                    │   User Interface    │
+                    └──────────┬──────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+       User Profiles      Matchmaking       Skill Wallet
+             │                 │                 │
+             └─────────────────┼─────────────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    PHP Backend      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      MySQL DB       │
+                    └─────────────────────┘
+```
+
+---
+
+## 🗂️ Core System Modules
+
+```text
+SkillSwap Wallet System
+│
+├── User Registration & Authentication
+├── User Profile Management
+├── Skill Management
+├── Skill Wallet
+├── AI Matchmaking
+├── Swap Requests
+├── Session Management
+├── Chat & Audio Messaging
+├── Reviews & Ratings
+├── Gamification
+└── Admin Dashboard
+```
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+* AJAX
+
+### Backend
+
+* PHP
+
+### Database
+
+* MySQL
+
+### Development Concepts
+
+* Modular architecture
+* Role-based access control
+* Credit-based transaction management
+* Database-driven matchmaking
+* Session management
+* Reputation system
+
+The proposal specifically identifies **PHP + MySQL with a modular design** as the core architecture.
+
+---
+
+## 🗄️ Database
+
+The system uses MySQL to manage application data.
+
+Important data areas include:
+
+```text
+Users
+Profiles
+Skills
+Wallet Transactions
+Sessions
+Messages
+Reviews
+Swap Requests
+Reports
+```
+
+The system also maintains session confirmation information and wallet transactions to ensure that credits are transferred only after successful session completion.
+
+---
+
+## 🔐 Security & Fairness
+
+SkillSwap is designed with mechanisms to reduce abuse and maintain fairness.
+
+* Role-based admin access
+* Wallet balance verification
+* Session confirmation
+* Review and rating system
+* User reporting
+* Account suspension
+* Transaction tracking
+
+Users with zero credits cannot normally book learning sessions, while an emergency borrowing mechanism handles exceptional cases.
+
+---
+
+## 🚀 Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR-USERNAME/skillswap-wallet.git
+```
+
+### 2. Move the Project
+
+If using XAMPP:
+
+```text
+C:\xampp\htdocs\skillswap-wallet
+```
+
+### 3. Start XAMPP
+
+Start:
+
+```text
+Apache
+MySQL
+```
+
+### 4. Create Database
+
+Open:
+
+```text
+http://localhost/phpmyadmin
+```
+
+Create a MySQL database for the SkillSwap project.
+
+### 5. Import Database
+
+Import the project's SQL file into the newly created database.
+
+### 6. Configure Database Connection
+
+Update your PHP database configuration with:
+
+```php
+DB_HOST = "localhost";
+DB_USER = "root";
+DB_PASSWORD = "";
+DB_NAME = "skillswap";
+```
+
+### 7. Run the Project
+
+Open:
+
+```text
+http://localhost/skillswap-wallet/
+```
+
+---
+
+## 📸 Screenshots
+
+Add project screenshots here after completing the UI.
+
+```text
+docs/
+├── login.png
+├── dashboard.png
+├── profile.png
+├── wallet.png
+├── matchmaking.png
+├── chat.png
+└── admin-dashboard.png
+```
+
+Example:
+
+```markdown
+![Dashboard](docs/dashboard.png)
+```
+
+---
+
+## 🔮 Future Enhancements
+
+The proposed architecture can be extended with:
+
+* WebRTC video sessions
+* Improved AI matchmaking
+* Mobile application API
+* Advanced analytics
+* More advanced recommendation algorithms
+
+These future extensions are also identified in the project proposal.
+
+---
+
+## 🎓 Academic Project
+
+**Project:** SkillSwap Wallet System
+**Program:** Higher National Diploma in Information Technology
+**Institute:** Advanced Technological Institute, Batticaloa – SLIATE
+**Year:** 2026
+**Developer:** T. Premmakkumar
+
+---
+
+## 📄 Project Proposal
+
+The complete project proposal is available in this repository for reference.
+
+```text
+docs/
+└── SkillSwap_Wallet_Proposal.pdf
+```
+
+---
+
+## 📜 License
+
+This project is developed as an academic software development project.
+
+© 2026 T. Premmakkumar. All rights reserved.
+
+```
+
+### ⭐ SkillSwap Wallet System
+
+**Learn Skills. Share Knowledge. Earn Credits.**
+
+> **No Money. Just Skills.**
+
+**GitHub-ல் இன்னும் professional-ஆ காட்ட**, repository-ல் `README.md` + `docs/` folder + screenshots + database `.sql` file + project demo link ஆகியவற்றையும் சேர்ப்பது நல்லது. Proposal-ல் உள்ள actual project scope-க்கு இந்த structure பொருந்துகிறது.
+```
